@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap');
+
+;root {
+    --gold: #D5966C;
+    --almost-black: #151515;
+    --dark-grey: #444444;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    background: linear-gradient(to right, #151515 50%, #FFFFFF 50%);;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.img-hero {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    overflow: hidden;
+    left: 30%;
+}
+
+h1 {
+    color: var(--almost-black);
+    position: absolute;
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    font-size: 96px;
+    line-height: 88px;
+    z-index: 1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    left: 8%;
+    top: 15%;
+}
+
+.hero p {
+    position: absolute;
+    z-index: 100;
+    width: 350px;
+    height: 160px;
+    left: 67%;
+    right: 0%;
+    top: calc(50% - 150px/2 - 110px);
+    mix-blend-mode: difference;
+}
+
+.btn-hero {
+    position: absolute;
+    left: 925px;
+    top: 414px;
+}
+
+.btn-location {
+    width: 204px;
+    height: 72px;
+    border: none;
+    background-color: var(--almost-black);
+    color: var(--white);
+    font-family: 'Big Shoulders Display';
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3.63636px;
+}
+
+.btn-arrow {
+    width: 56px;
+    height: 72px;
+    border: none;
+    background-color: var(--gold);
+}
